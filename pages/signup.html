@@ -1,0 +1,99 @@
+<html>
+<head>
+    <title>Đăng ký CLB</title>
+    <style>
+        @import url(/src/mStyle.css);
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .signup-form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 400px;
+        }
+        .signup-form h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .form-group input:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form class="signup-form">
+        <h2>Đăng ký CLB</h2>
+        <div class="form-group">
+            <label for="name">Họ và Tên</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+        </div>
+        <button type="submit" class="submit-btn">Tạo tài khoản</button>
+        <a href="/index.html">Quay lại</a>
+    </form>
+
+    <footer>
+        <div id="footerDiv">
+            <img width="10%" src="/assets/images/footerLogo.png">
+            <ul>
+                LIÊN KẾT HỮU ÍCH
+
+                <li><a href="/pages/gioithieu.html">Giới thiệu</a></li>
+                <li><a href="/pages/ngoaikhoa.html">Các hoạt động chính</a></li>
+            </ul>
+            <ul>
+                KẾT NỐI VỚI CHÚNG TÔI
+
+                <li>SĐT: 0911 366 082</li>
+                <li>EMAIL: c3hotungmau@hanoiedu.vn</li>
+                <li>ĐỊA TRỈ: Số 18 Khương Hạ, quận Thanh Xuân, Hà Nội </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

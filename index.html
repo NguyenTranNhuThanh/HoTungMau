@@ -1,0 +1,225 @@
+<html>
+    <head>
+        <style>
+            @import url(/src/mStyle.css);
+
+            h3 {
+                margin: 0%;
+            }
+
+
+            /* banner */
+            #bannerDiv {
+                position: relative;
+
+                background-color: black;
+
+                width: 100vw;
+                height: 100vh;
+
+                animation-name: popUpBannerDiv;
+                animation-timing-function: ease-out;
+                animation-duration: 0.9s;
+
+                justify-content: center;
+                
+                overflow-y: hidden;
+            }
+
+            #banner {
+                position: absolute;
+
+                width: 100vw;
+                height: 100vh;
+
+                object-fit: cover;
+            }
+
+            #slogan {
+                position: absolute;
+
+                font-family: "Roboto";
+                color: #f0a123;
+
+                margin: 0%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                font-size: 5rem;
+
+                text-wrap: nowrap;
+
+                text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+            }
+
+            #find {
+                position: absolute;
+
+                left: 50%;
+                transform: translate(-50%, 85vh);
+            }
+
+            /* feats */
+            #feats {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+
+                overflow-y: hidden;
+
+                animation: scrollFeats 1s linear infinite;
+                animation-play-state: paused;
+                animation-delay: calc(var(--scroll) * var(--scroll) * var(--scroll) * var(--scroll) * -120s);
+                animation-iteration-count: 1;
+                animation-fill-mode: both;
+            }
+
+            .title {
+                background-color: #353963;
+                color: white;
+
+                font-family: "Roboto";
+                text-align: center;
+
+                font-size: 4rem;
+            }
+
+            .feat {
+                font-family: "Roboto";
+                text-align: center;
+                width: 500px;
+            }
+
+            .featTitle {
+                font-size: 3rem;
+                font-weight: bold;
+            }
+
+            .featDesc {
+                font-size: 1.7rem;
+            }
+
+            /* activities */
+            #activities {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-row-end: 2;
+                justify-items: center;
+
+                font-family: "Roboto";
+                font-size: 2rem;
+
+                row-gap: 50px;
+
+                animation: scrollFeats 1s linear infinite;
+                animation-play-state: paused;
+                animation-delay: calc(var(--scroll) * var(--scroll) * var(--scroll) * var(--scroll) * -10s);
+                animation-iteration-count: 1;
+                animation-fill-mode: both;
+
+                margin: 2%;
+            }
+
+            .activity {
+                text-align: center;
+            }
+
+            @keyframes popUpBannerDiv {
+                0% {
+                    opacity: 0%;
+
+                    transform: translateY(20%);
+                }
+                100% {
+                    opacity: 100%;
+
+                    transform: translateY(0%);
+                }
+            }
+
+            @keyframes scrollFeats {
+                0% {
+                    opacity: 0%;
+
+                    transform: translateY(20%);
+                }
+                100% {
+                    opacity: 100%;
+
+                    transform: translateY(0%);
+                }
+            }
+        </style>
+
+        <title>TRANG CHỦ</title>
+    </head>
+
+    <body>
+        <div id="bannerDiv">
+            <img id="banner" src="/assets/images/index/banner.png">
+            <h1 id="slogan">NƠI LƯU GIỮ THANH XUÂN</h1>
+            <img id="find" src="/assets/images/index/find.png"> 
+        </div>
+
+        <div id="header">
+            <img id="headerLogo" src="/assets/images/index/headerLogo.png">
+        </div>
+
+        <h2 class="title">KHƠI DẬY ĐAM MÊ</h2>
+        <div id="feats">
+            <div class="feat">
+                <h3 class="featTitle">NĂNG ĐỘNG</h3>
+                <p class="featDesc">Hoạt động năng nổ và hiệu quả</p>
+            </div>
+
+            <div class="feat">
+                <h3 class="featTitle">ĐAM MÊ</h3>
+                <p class="featDesc">Cháy hết mình trong các cuộc chơi</p>
+            </div>
+
+            <div class="feat">
+                <h3 class="featTitle">TỎA SÁNG</h3>
+                <p class="featDesc">Giành những giải thưởng cao nhất</p>
+            </div>
+        </div>
+
+        <h2 class="title">TRẢI NGHIỆM HOẠT ĐỘNG</h2>
+        <div id="activities">
+            <div class="activity">
+                <img width="90%" src="/assets/images/index/act1.png">
+                <a href="/pages/dabong.html"><h2>ĐÁ BÓNG</h2></a>
+            </div>
+
+            <div class="activity">
+                <img width="90%" src="/assets/images/index/act2.jpg">
+                <a href="/pages/caulong.html"><h2>CẦU LÔNG</h2></a>
+            </div>
+        </div>
+
+        <footer>
+            <div id="footerDiv">
+                <img width="10%" src="/assets/images/footerLogo.png">
+                <ul>
+                    LIÊN KẾT HỮU ÍCH
+
+                    <li><a href="/pages/gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="/pages/ngoaikhoa.html">Các hoạt động chính</a></li>
+                </ul>
+                <ul>
+                    KẾT NỐI VỚI CHÚNG TÔI
+
+                    <li>SĐT: 0911 366 082</li>
+                    <li>EMAIL: c3hotungmau@hanoiedu.vn</li>
+                    <li>ĐỊA TRỈ: Số 18 Khương Hạ, quận Thanh Xuân, Hà Nội </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+        }, false);
+    </script>
+</html>
